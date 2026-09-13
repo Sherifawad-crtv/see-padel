@@ -100,7 +100,6 @@
   <section data-r="feat" style="position:sticky;top:0;min-height:100vh;display:grid;grid-template-columns:1.15fr minmax(320px,1fr);align-items:center;gap:60px;background:#F4F4F5;padding:96px 72px;font-family:'Inter',system-ui,sans-serif">
     <div data-r="feat-card" data-r-keep-aspect="true" style="position:relative;width:100%;aspect-ratio:1.309 / 1;overflow:visible">
       <img src="./assets/feat-match-stats-sm.webp" loading="lazy" decoding="async" alt="Match stats card over a padel court fence" style="position:absolute;top:-4.60%;left:-4.69%;display:block;width:109.39%;height:112.28%;object-fit:fill">
-      <div class="mobile-feat-frame"><img class="mobile-feat-img" src="./assets/feat1-mobile-sm.webp?v=r2" loading="lazy" decoding="async" alt="Match stats card over a padel court fence"></div>
     </div>
     <div style="display:flex;flex-direction:column;gap:24px;max-width:620px">
       <div style="display:flex;align-items:center;gap:10px;color:#F5821F;font-size:14px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase">
@@ -114,7 +113,6 @@
   <section data-r="feat" style="position:sticky;top:0;min-height:100vh;display:grid;grid-template-columns:1.15fr minmax(320px,1fr);align-items:center;gap:60px;background:#F4F4F5;padding:96px clamp(20px,4vw,72px);box-shadow:0 -30px 60px rgba(10,30,70,0.10);font-family:'Inter',system-ui,sans-serif">
     <div data-r="feat-card" data-r-keep-aspect="true" style="position:relative;width:100%;aspect-ratio:1.309 / 1;overflow:visible">
       <img src="./assets/feat-error-analysis-sm.webp" loading="lazy" decoding="async" alt="Error breakdown card over a padel court with racket and balls" style="position:absolute;top:-4.60%;left:-4.69%;display:block;width:109.39%;height:112.28%;object-fit:fill">
-      <div class="mobile-feat-frame"><img class="mobile-feat-img" src="./assets/feat2-mobile-sm.webp?v=r2" loading="lazy" decoding="async" alt="Error breakdown card over a padel court with racket and balls"></div>
     </div>
     <div style="display:flex;flex-direction:column;gap:24px;max-width:620px">
       <div style="display:flex;align-items:center;gap:10px;color:#F5821F;font-size:14px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase">
@@ -128,7 +126,6 @@
   <section data-r="feat" style="position:sticky;top:0;min-height:100vh;display:grid;grid-template-columns:1.15fr minmax(320px,1fr);align-items:center;gap:60px;background:#F4F4F5;padding:96px clamp(20px,4vw,72px);box-shadow:0 -30px 60px rgba(10,30,70,0.10);font-family:'Inter',system-ui,sans-serif">
     <div data-r="feat-card" data-r-keep-aspect="true" style="position:relative;width:100%;aspect-ratio:1.309 / 1;overflow:visible">
       <img src="./assets/feat-shot-type-sm.webp" loading="lazy" decoding="async" alt="Shot type radar chart card over a padel court" style="position:absolute;top:-4.60%;left:-4.69%;display:block;width:109.39%;height:112.28%;object-fit:fill">
-      <div class="mobile-feat-frame"><img class="mobile-feat-img" src="./assets/feat3-mobile-sm.webp?v=r2" loading="lazy" decoding="async" alt="Shot type radar chart card over a padel court"></div>
     </div>
     <div style="display:flex;flex-direction:column;gap:24px;max-width:620px">
       <div style="display:flex;align-items:center;gap:10px;color:#F5821F;font-size:14px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase">
@@ -142,7 +139,6 @@
   <section data-r="feat" style="position:sticky;top:0;min-height:100vh;display:grid;grid-template-columns:1.15fr minmax(320px,1fr);align-items:center;gap:60px;background:#F4F4F5;padding:96px clamp(20px,4vw,72px);box-shadow:0 -30px 60px rgba(10,30,70,0.10);font-family:'Inter',system-ui,sans-serif">
     <div data-r="feat-card" data-r-keep-aspect="true" style="position:relative;width:100%;aspect-ratio:1.309 / 1;overflow:visible">
       <img src="./assets/feat-heatmap-sm.webp" loading="lazy" decoding="async" alt="Court heatmap card showing player positioning zones" style="position:absolute;top:-4.60%;left:-4.69%;display:block;width:109.39%;height:112.28%;object-fit:fill">
-      <div class="mobile-feat-frame"><img class="mobile-feat-img" src="./assets/feat4-mobile-sm.webp?v=r2" loading="lazy" decoding="async" alt="Court heatmap card showing player positioning zones"></div>
     </div>
     <div style="display:flex;flex-direction:column;gap:24px;max-width:620px">
       <div style="display:flex;align-items:center;gap:10px;color:#F5821F;font-size:14px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase">
@@ -154,6 +150,42 @@
   </section>
 
   <script>if (window.matchMedia('(max-width:767px)').matches) { document.querySelectorAll('[data-r="feat"]').forEach(function (el) { el.remove(); }); }</script>
+
+  <!-- ==================== MOBILE FEATURES (standalone) ==================== -->
+  <div class="mfeat-list">
+    <div class="mfeat-card">
+      <div class="mfeat-media"><div class="mfeat-placeholder">Image: Match Stats</div></div>
+      <div class="mfeat-body">
+        <div class="mfeat-eyebrow"><span class="mfeat-dot"></span>Match Stats</div>
+        <h3 class="mfeat-h">Your match, in <span class="mfeat-accent">numbers</span></h3>
+        <p class="mfeat-p">Winners. Smashes. Total shots. Forced errors. Unforced errors. SEE captures the key numbers behind every match, so you know exactly what happened on court.</p>
+      </div>
+    </div>
+    <div class="mfeat-card">
+      <div class="mfeat-media"><div class="mfeat-placeholder">Image: Error Analysis</div></div>
+      <div class="mfeat-body">
+        <div class="mfeat-eyebrow"><span class="mfeat-dot"></span>Error Analysis</div>
+        <h3 class="mfeat-h">Forced vs. unforced <span class="mfeat-accent">errors</span></h3>
+        <p class="mfeat-p">SEE separates the points you gave away from the ones your opponents earned. Know where errors happen, which shots cause them, and what to fix next.</p>
+      </div>
+    </div>
+    <div class="mfeat-card">
+      <div class="mfeat-media"><div class="mfeat-placeholder">Image: Track Every Shot</div></div>
+      <div class="mfeat-body">
+        <div class="mfeat-eyebrow"><span class="mfeat-dot"></span>Track every shot</div>
+        <h3 class="mfeat-h">Every shot <span class="mfeat-accent">tracked.</span></h3>
+        <p class="mfeat-p">Volleys, smashes, lobs, bandejas, viboras, forehands, serves. SEE shows what makes up your game, how often you use each shot, and which patterns define your style.</p>
+      </div>
+    </div>
+    <div class="mfeat-card">
+      <div class="mfeat-media"><div class="mfeat-placeholder">Image: Court Intelligence</div></div>
+      <div class="mfeat-body">
+        <div class="mfeat-eyebrow"><span class="mfeat-dot"></span>Court Intelligence</div>
+        <h3 class="mfeat-h">Where you stood. Where your shots <span class="mfeat-accent">landed.</span></h3>
+        <p class="mfeat-p">Player positioning and shot placement tracking. SEE maps every zone of the court you dominated and every area you avoided.</p>
+      </div>
+    </div>
+  </div>
 
   <section data-r="inside" style="position:relative;overflow:hidden;background-color:#0052C9;background-image:url('./assets/bg-noise.png');background-size:1150px auto;background-repeat:repeat;background-position:top center;padding:clamp(64px,8vh,110px) 0 0;font-family:'Inter',system-ui,sans-serif">
     <div style="display:flex;flex-direction:column;align-items:center;gap:14px;text-align:center;padding:0 clamp(20px,4vw,72px)">

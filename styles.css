@@ -13,6 +13,22 @@ a { color:#FFFFFF; text-decoration:none; }
 a:hover { color:#F5821F; }
 html { scroll-behavior:smooth; }
 
+/* ---- Mobile features (standalone, plain block flow — no sticky/aspect-ratio tricks) ---- */
+.mfeat-list { display:none; }
+@media (max-width:767px) {
+  .mfeat-list { display:flex; flex-direction:column; gap:56px; background:#F4F4F5; padding:56px 20px; font-family:'Inter',system-ui,sans-serif; }
+  .mfeat-card { display:flex; flex-direction:column; }
+  .mfeat-media { width:100%; height:56svh; border-radius:26px; overflow:hidden; }
+  .mfeat-placeholder { width:100%; height:100%; box-sizing:border-box; display:flex; align-items:center; justify-content:center; text-align:center; padding:20px; background:#E4E4E7; border:2px dashed #B9B9C2; color:#8A8A93; font-size:14px; font-weight:600; }
+  .mfeat-img { display:block; width:100%; height:100%; object-fit:cover; }
+  .mfeat-body { display:flex; flex-direction:column; gap:16px; margin-top:24px; }
+  .mfeat-eyebrow { display:flex; align-items:center; gap:10px; color:#F5821F; font-size:14px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; }
+  .mfeat-dot { width:9px; height:9px; border-radius:50%; background:#F5821F; }
+  .mfeat-h { margin:0; font-family:'Obviously','Archivo',sans-serif; font-style:italic; font-weight:700; font-size:min(6.6vw,40px); line-height:0.98; letter-spacing:-0.02em; text-transform:uppercase; color:#0052C9; }
+  .mfeat-accent { color:#F5821F; }
+  .mfeat-p { margin:0; font-size:15px; line-height:1.55; color:#6B7076; }
+}
+
 /* ---- For clubs CTA panel ---- */
 .clubs-panel { background-color:#F5821F !important; }
 
