@@ -37,7 +37,7 @@ html { scroll-behavior:smooth; }
 
 /* ---- Hero noise field ---- */
 [data-r="hero"] {
-  background-image:url("./assets/bg-noise.png");
+  background-image:url("./assets/bg-noise.webp");
   background-size:1150px auto;
   background-repeat:repeat;
   background-position:top center;
