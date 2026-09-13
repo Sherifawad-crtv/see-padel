@@ -109,11 +109,11 @@ html { scroll-behavior:smooth; }
   [data-r="feat"] p { font-size:15px !important; line-height:1.55 !important; }
   [data-r="feat"] > div:last-child { gap:14px !important; }
   [data-r="feat-h2"] { font-size:min(6.6vw,40px) !important; }
-  [data-r="feat-card"] { aspect-ratio:auto !important; height:auto !important; overflow:visible !important; }
-  [data-r="feat-card"][data-r-keep-aspect] { aspect-ratio:auto !important; height:auto !important; min-height:0 !important; max-height:none !important; width:100% !important; max-width:100% !important; margin:0 !important; }
+  [data-r="feat-card"] { aspect-ratio:auto !important; height:auto !important; overflow:visible !important; padding:0 !important; margin:0 !important; border:0 !important; }
+  [data-r="feat-card"][data-r-keep-aspect] { aspect-ratio:auto !important; height:auto !important; min-height:0 !important; max-height:none !important; width:100% !important; max-width:100% !important; margin:0 !important; padding:0 !important; border:0 !important; }
   [data-r="feat-card"] > img { display:none !important; }
-  .mobile-feat-frame { display:block !important; width:100% !important; height:56svh !important; border-radius:26px !important; overflow:hidden !important; }
-  .mobile-feat-img { display:block !important; width:100% !important; height:100% !important; object-fit:cover !important; }
+  .mobile-feat-frame { display:block !important; width:100% !important; height:56svh !important; margin:0 !important; padding:0 !important; border:0 !important; border-radius:26px !important; overflow:hidden !important; }
+  .mobile-feat-img { display:block !important; width:100% !important; height:100% !important; margin:0 !important; padding:0 !important; border:0 !important; object-fit:cover !important; }
 
   [data-r="footer"] { display:flex !important; flex-direction:column !important; padding-bottom:0 !important; }
   [data-r="footer-top"] { order:1 !important; grid-template-columns:1fr !important; gap:26px !important; }
