@@ -13,9 +13,6 @@ a { color:#FFFFFF; text-decoration:none; }
 a:hover { color:#F5821F; }
 html { scroll-behavior:smooth; }
 
-/* ---- Mobile-only feature card frame (hidden by default, shown under the mobile breakpoint) ---- */
-.mobile-feat-frame { display:none; }
-
 /* ---- For clubs CTA panel ---- */
 .clubs-panel { background-color:#F5821F !important; }
 
@@ -104,16 +101,6 @@ html { scroll-behavior:smooth; }
   [data-r="hl-courtline"] { z-index:1 !important; right:8% !important; }
   [data-r="hl-divider"] { left:8% !important; z-index:1 !important; }
   [data-r="hl-h2"] { font-size:min(7.4vw,54px) !important; }
-
-  [data-r="feat"] { grid-template-columns:1fr !important; grid-template-rows:auto auto !important; gap:18px !important; padding:28px 20px !important; position:sticky !important; top:0 !important; height:100svh !important; min-height:0 !important; overflow:hidden !important; align-content:center !important; }
-  [data-r="feat"] p { font-size:15px !important; line-height:1.55 !important; }
-  [data-r="feat"] > div:last-child { gap:14px !important; }
-  [data-r="feat-h2"] { font-size:min(6.6vw,40px) !important; }
-  [data-r="feat-card"] { aspect-ratio:auto !important; height:auto !important; overflow:visible !important; padding:0 !important; margin:0 !important; border:0 !important; }
-  [data-r="feat-card"][data-r-keep-aspect] { aspect-ratio:auto !important; height:auto !important; min-height:0 !important; max-height:none !important; width:100% !important; max-width:100% !important; margin:0 !important; padding:0 !important; border:0 !important; }
-  [data-r="feat-card"] > img { display:none !important; }
-  .mobile-feat-frame { display:block !important; width:100% !important; height:56svh !important; margin:0 !important; padding:0 !important; border:0 !important; border-radius:26px !important; overflow:hidden !important; }
-  .mobile-feat-img { display:block !important; width:100% !important; height:100% !important; margin:0 !important; padding:0 !important; border:0 !important; object-fit:cover !important; }
 
   [data-r="footer"] { display:flex !important; flex-direction:column !important; padding-bottom:0 !important; }
   [data-r="footer-top"] { order:1 !important; grid-template-columns:1fr !important; gap:26px !important; }
