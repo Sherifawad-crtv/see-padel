@@ -152,6 +152,14 @@ html { scroll-behavior:smooth; }
   [data-r="inside"] { padding-bottom:40px !important; }
 }
 
+/* ---- Large phones (Pro Max and similar, >=428px): use the wide feature images instead of the tall mobile crops ---- */
+@media (min-width:428px) and (max-width:767px) {
+  [data-r="feat-card"] { aspect-ratio:1.309 / 1 !important; }
+  [data-r="feat-card"][data-r-keep-aspect] { aspect-ratio:1.309 / 1 !important; }
+  [data-r="feat-card"] > img[data-r="feat-img-m"] { display:none !important; }
+  [data-r="feat-card"] > img:not([data-r="feat-img-m"]) { display:block !important; position:absolute !important; top:-4.60% !important; left:-4.69% !important; width:109.39% !important; height:112.28% !important; object-fit:fill !important; }
+}
+
 @media (max-width:1023px) {
   [data-r="inside"] { min-height:100svh !important; display:flex !important; flex-direction:column !important; justify-content:space-between !important; box-sizing:border-box !important; }
 }
