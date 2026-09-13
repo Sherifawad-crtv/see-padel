@@ -5,11 +5,26 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>See Padel — See your game through AI</title>
 <meta name="description" content="Every shot tracked. Every error explained. Every moment captured. AI-powered highlights, stats, and reports for every padel player.">
-<link rel="icon" href="./assets/logo-mark.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32.png">
+<link rel="apple-touch-icon" href="./assets/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="See Padel">
+<meta property="og:title" content="See Padel — See your game through AI">
+<meta property="og:description" content="Every shot tracked. Every error explained. Every moment captured. AI-powered highlights, stats, and reports for every padel player.">
+<meta property="og:url" content="https://see-padel.vercel.app/">
+<meta property="og:image" content="https://see-padel.vercel.app/assets/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="680">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="See Padel — See your game through AI">
+<meta name="twitter:description" content="Every shot tracked. Every error explained. Every moment captured. AI-powered highlights, stats, and reports for every padel player.">
+<meta name="twitter:image" content="https://see-padel.vercel.app/assets/og-image.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400..900;1,400..900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./styles.css">
+<link rel="preload" as="image" href="./assets/bg-noise.webp" fetchpriority="high">
+<link rel="preload" as="image" href="./assets/hero.webp" fetchpriority="high">
+<link rel="stylesheet" href="./styles.css?v=opt1">
 </head>
 <body>
 
@@ -75,7 +90,7 @@
 
 <!-- ==================== SHAREABLE HIGHLIGHTS ==================== -->
 <section style="position:relative;z-index:1;background:#F4F4F5;padding:96px clamp(20px,4vw,72px);font-family:'Inter',system-ui,sans-serif">
-  <div data-r="hl" style="position:relative;width:100%;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;align-items:stretch;border-radius:26px;overflow:hidden;background-color:#0052C9;background-image:url('./assets/bg-noise.png');background-size:1150px auto;background-repeat:repeat;background-position:top center">
+  <div data-r="hl" style="position:relative;width:100%;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;align-items:stretch;border-radius:26px;overflow:hidden;background-color:#0052C9;background-image:url('./assets/bg-noise.webp');background-size:1150px auto;background-repeat:repeat;background-position:top center">
 
     <div style="display:flex;flex-direction:column;gap:24px;padding:clamp(40px,4.6vw,86px) clamp(28px,3.6vw,72px)">
       <div style="display:flex;align-items:center;gap:10px;color:#F5821F;font-size:14px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase">
@@ -100,7 +115,6 @@
   <section data-r="feat" style="position:sticky;top:0;min-height:100vh;display:grid;grid-template-columns:1.15fr minmax(320px,1fr);align-items:center;gap:60px;background:#F4F4F5;padding:96px 72px;font-family:'Inter',system-ui,sans-serif">
     <div data-r="feat-card" data-r-keep-aspect="true" style="position:relative;width:100%;aspect-ratio:1.309 / 1;overflow:visible">
       <img src="./assets/feat-match-stats-sm.webp" loading="lazy" decoding="async" alt="Match stats card over a padel court fence" style="position:absolute;top:-4.60%;left:-4.69%;display:block;width:109.39%;height:112.28%;object-fit:fill">
-      <img data-r="feat-img-m" src="./assets/feat1-mobile-sm.webp" loading="lazy" decoding="async" alt="Match stats card over a padel court fence" style="display:none">
     </div>
     <div style="display:flex;flex-direction:column;gap:24px;max-width:620px">
       <div style="display:flex;align-items:center;gap:10px;color:#F5821F;font-size:14px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase">
@@ -114,7 +128,6 @@
   <section data-r="feat" style="position:sticky;top:0;min-height:100vh;display:grid;grid-template-columns:1.15fr minmax(320px,1fr);align-items:center;gap:60px;background:#F4F4F5;padding:96px clamp(20px,4vw,72px);box-shadow:0 -30px 60px rgba(10,30,70,0.10);font-family:'Inter',system-ui,sans-serif">
     <div data-r="feat-card" data-r-keep-aspect="true" style="position:relative;width:100%;aspect-ratio:1.309 / 1;overflow:visible">
       <img src="./assets/feat-error-analysis-sm.webp" loading="lazy" decoding="async" alt="Error breakdown card over a padel court with racket and balls" style="position:absolute;top:-4.60%;left:-4.69%;display:block;width:109.39%;height:112.28%;object-fit:fill">
-      <img data-r="feat-img-m" src="./assets/feat2-mobile-sm.webp" loading="lazy" decoding="async" alt="Error breakdown card over a padel court with racket and balls" style="display:none">
     </div>
     <div style="display:flex;flex-direction:column;gap:24px;max-width:620px">
       <div style="display:flex;align-items:center;gap:10px;color:#F5821F;font-size:14px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase">
@@ -128,7 +141,6 @@
   <section data-r="feat" style="position:sticky;top:0;min-height:100vh;display:grid;grid-template-columns:1.15fr minmax(320px,1fr);align-items:center;gap:60px;background:#F4F4F5;padding:96px clamp(20px,4vw,72px);box-shadow:0 -30px 60px rgba(10,30,70,0.10);font-family:'Inter',system-ui,sans-serif">
     <div data-r="feat-card" data-r-keep-aspect="true" style="position:relative;width:100%;aspect-ratio:1.309 / 1;overflow:visible">
       <img src="./assets/feat-shot-type-sm.webp" loading="lazy" decoding="async" alt="Shot type radar chart card over a padel court" style="position:absolute;top:-4.60%;left:-4.69%;display:block;width:109.39%;height:112.28%;object-fit:fill">
-      <img data-r="feat-img-m" src="./assets/feat3-mobile-sm.webp" loading="lazy" decoding="async" alt="Shot type radar chart card over a padel court" style="display:none">
     </div>
     <div style="display:flex;flex-direction:column;gap:24px;max-width:620px">
       <div style="display:flex;align-items:center;gap:10px;color:#F5821F;font-size:14px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase">
@@ -142,7 +154,6 @@
   <section data-r="feat" style="position:sticky;top:0;min-height:100vh;display:grid;grid-template-columns:1.15fr minmax(320px,1fr);align-items:center;gap:60px;background:#F4F4F5;padding:96px clamp(20px,4vw,72px);box-shadow:0 -30px 60px rgba(10,30,70,0.10);font-family:'Inter',system-ui,sans-serif">
     <div data-r="feat-card" data-r-keep-aspect="true" style="position:relative;width:100%;aspect-ratio:1.309 / 1;overflow:visible">
       <img src="./assets/feat-heatmap-sm.webp" loading="lazy" decoding="async" alt="Court heatmap card showing player positioning zones" style="position:absolute;top:-4.60%;left:-4.69%;display:block;width:109.39%;height:112.28%;object-fit:fill">
-      <img data-r="feat-img-m" src="./assets/feat4-mobile-sm.webp" loading="lazy" decoding="async" alt="Court heatmap card showing player positioning zones" style="display:none">
     </div>
     <div style="display:flex;flex-direction:column;gap:24px;max-width:620px">
       <div style="display:flex;align-items:center;gap:10px;color:#F5821F;font-size:14px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase">
@@ -153,7 +164,45 @@
     </div>
   </section>
 
-  <section data-r="inside" style="position:relative;overflow:hidden;background-color:#0052C9;background-image:url('./assets/bg-noise.png');background-size:1150px auto;background-repeat:repeat;background-position:top center;padding:clamp(64px,8vh,110px) 0 0;font-family:'Inter',system-ui,sans-serif">
+  <script>if (window.matchMedia('(max-width:767px)').matches) { document.querySelectorAll('[data-r="feat"]').forEach(function (el) { el.remove(); }); }</script>
+
+  <!-- ==================== MOBILE FEATURES (standalone) ==================== -->
+  <div class="mfeat-list">
+    <div class="mfeat-card">
+      <div class="mfeat-media"><img class="mfeat-img" src="./assets/mfeat1.webp" loading="lazy" decoding="async" alt="Match stats card over a padel court fence"></div>
+      <div class="mfeat-body">
+        <div class="mfeat-eyebrow"><span class="mfeat-dot"></span>Match Stats</div>
+        <h3 class="mfeat-h">Your match, in <span class="mfeat-accent">numbers</span></h3>
+        <p class="mfeat-p">Winners. Smashes. Total shots. Forced errors. Unforced errors. SEE captures the key numbers behind every match, so you know exactly what happened on court.</p>
+      </div>
+    </div>
+    <div class="mfeat-card">
+      <div class="mfeat-media"><img class="mfeat-img" src="./assets/mfeat2.webp" loading="lazy" decoding="async" alt="Error breakdown card over a padel court with racket and balls"></div>
+      <div class="mfeat-body">
+        <div class="mfeat-eyebrow"><span class="mfeat-dot"></span>Error Analysis</div>
+        <h3 class="mfeat-h">Forced vs. unforced <span class="mfeat-accent">errors</span></h3>
+        <p class="mfeat-p">SEE separates the points you gave away from the ones your opponents earned. Know where errors happen, which shots cause them, and what to fix next.</p>
+      </div>
+    </div>
+    <div class="mfeat-card">
+      <div class="mfeat-media"><img class="mfeat-img" src="./assets/mfeat3.webp" loading="lazy" decoding="async" alt="Shot type radar chart card over a padel court"></div>
+      <div class="mfeat-body">
+        <div class="mfeat-eyebrow"><span class="mfeat-dot"></span>Track every shot</div>
+        <h3 class="mfeat-h">Every shot <span class="mfeat-accent">tracked.</span></h3>
+        <p class="mfeat-p">Volleys, smashes, lobs, bandejas, viboras, forehands, serves. SEE shows what makes up your game, how often you use each shot, and which patterns define your style.</p>
+      </div>
+    </div>
+    <div class="mfeat-card">
+      <div class="mfeat-media"><img class="mfeat-img" src="./assets/mfeat4.webp" loading="lazy" decoding="async" alt="Court heatmap card showing player positioning zones"></div>
+      <div class="mfeat-body">
+        <div class="mfeat-eyebrow"><span class="mfeat-dot"></span>Court Intelligence</div>
+        <h3 class="mfeat-h">Where you stood. Where your shots <span class="mfeat-accent">landed.</span></h3>
+        <p class="mfeat-p">Player positioning and shot placement tracking. SEE maps every zone of the court you dominated and every area you avoided.</p>
+      </div>
+    </div>
+  </div>
+
+  <section data-r="inside" style="position:relative;overflow:hidden;background-color:#0052C9;background-image:url('./assets/bg-noise.webp');background-size:1150px auto;background-repeat:repeat;background-position:top center;padding:clamp(64px,8vh,110px) 0 0;font-family:'Inter',system-ui,sans-serif">
     <div style="display:flex;flex-direction:column;align-items:center;gap:14px;text-align:center;padding:0 clamp(20px,4vw,72px)">
       <div style="display:flex;align-items:center;gap:10px;color:#F5821F;font-size:14px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase">
         <span style="width:9px;height:9px;border-radius:50%;background:#F5821F"></span>The full picture
@@ -223,7 +272,7 @@
 
 <!-- ========================= FOR CLUBS ========================= -->
 <section id="clubs" style="background:#F4F4F5;padding:0 clamp(20px,4vw,72px) 96px;font-family:'Inter',system-ui,sans-serif">
-  <div data-r="cta-panel" style="position:relative;width:100%;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;align-items:stretch;border-radius:26px;overflow:hidden;background-color:#F5821F;background-image:url('./assets/bg-noise.png');background-size:1150px auto;background-repeat:repeat;background-position:top center">
+  <div data-r="cta-panel" class="clubs-panel" style="position:relative;width:100%;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;align-items:stretch;border-radius:26px;overflow:hidden;background-image:url('./assets/bg-noise-white.webp');background-size:1150px auto;background-repeat:repeat;background-position:top center">
 
     <div style="display:flex;flex-direction:column;gap:24px;padding:clamp(40px,4.6vw,86px) clamp(28px,3.6vw,72px)">
       <div style="display:flex;align-items:center;gap:10px;color:#fff;font-size:14px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase">
@@ -294,7 +343,7 @@
 </section>
 
 <!-- =========================== FOOTER =========================== -->
-<footer data-r="footer" style="position:relative;overflow:hidden;display:flex;flex-direction:column;background-color:#0052C9;background-image:url('./assets/bg-noise.png');background-size:1150px auto;background-repeat:repeat;background-position:top center;padding:clamp(56px,7vw,110px) 0 0;color:#fff;font-family:'Inter',system-ui,sans-serif">
+<footer data-r="footer" style="position:relative;overflow:hidden;display:flex;flex-direction:column;background-color:#0052C9;background-image:url('./assets/bg-noise.webp');background-size:1150px auto;background-repeat:repeat;background-position:top center;padding:clamp(56px,7vw,110px) 0 0;color:#fff;font-family:'Inter',system-ui,sans-serif">
 
   <div data-r="footer-top" style="order:1;display:grid;grid-template-columns:1fr 2fr;gap:clamp(28px,4vw,64px);align-items:start;padding:0 clamp(20px,4vw,72px)">
     <img src="./assets/logo-mark.png" alt="See Padel" style="height:44px;width:auto;display:block;margin-bottom:clamp(24px,3vw,44px)">
@@ -358,6 +407,6 @@
   <div data-r="footer-copy-m" style="display:none;order:3;position:relative;z-index:2;margin-top:clamp(28px,3vw,48px);padding:0 clamp(20px,4vw,72px);font-size:13px;line-height:1.5;letter-spacing:0.02em;text-transform:uppercase;color:rgba(255,255,255,0.8)">&copy; See Padel / All rights reserved</div>
 </footer>
 
-<script src="./app.js"></script>
+<script src="./app.js?v=a4f3693"></script>
 </body>
 </html>

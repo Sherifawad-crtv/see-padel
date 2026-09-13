@@ -13,9 +13,31 @@ a { color:#FFFFFF; text-decoration:none; }
 a:hover { color:#F5821F; }
 html { scroll-behavior:smooth; }
 
+/* ---- Mobile features (standalone, plain block flow — no sticky/aspect-ratio tricks) ---- */
+.mfeat-list { display:none; }
+@media (max-width:767px) {
+  .mfeat-list { display:flex; flex-direction:column; gap:40px; background:#F4F4F5; padding:56px 20px 96px; font-family:'Inter',system-ui,sans-serif; position:relative; isolation:isolate; z-index:2; }
+  .mfeat-card { display:flex; flex-direction:column; position:sticky; background:#F4F4F5; padding-top:20px; }
+  .mfeat-card:nth-child(1) { top:20px; z-index:1; }
+  .mfeat-card:nth-child(2) { top:44px; z-index:2; }
+  .mfeat-card:nth-child(3) { top:68px; z-index:3; }
+  .mfeat-card:nth-child(4) { top:92px; z-index:4; }
+  .mfeat-media { width:100%; height:56svh; border-radius:26px; overflow:hidden; }
+  .mfeat-img { display:block; width:100%; height:100%; object-fit:cover; }
+  .mfeat-body { display:flex; flex-direction:column; gap:16px; margin-top:24px; }
+  .mfeat-eyebrow { display:flex; align-items:center; gap:10px; color:#F5821F; font-size:14px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; }
+  .mfeat-dot { width:9px; height:9px; border-radius:50%; background:#F5821F; }
+  .mfeat-h { margin:0; font-family:'Obviously','Archivo',sans-serif; font-style:italic; font-weight:700; font-size:min(6.6vw,40px); line-height:0.98; letter-spacing:-0.02em; text-transform:uppercase; color:#0052C9; }
+  .mfeat-accent { color:#F5821F; }
+  .mfeat-p { margin:0; font-size:15px; line-height:1.55; color:#6B7076; }
+}
+
+/* ---- For clubs CTA panel ---- */
+.clubs-panel { background-color:#F5821F !important; }
+
 /* ---- Hero noise field ---- */
 [data-r="hero"] {
-  background-image:url("./assets/bg-noise.png");
+  background-image:url("./assets/bg-noise.webp");
   background-size:1150px auto;
   background-repeat:repeat;
   background-position:top center;
@@ -98,16 +120,6 @@ html { scroll-behavior:smooth; }
   [data-r="hl-courtline"] { z-index:1 !important; right:8% !important; }
   [data-r="hl-divider"] { left:8% !important; z-index:1 !important; }
   [data-r="hl-h2"] { font-size:min(7.4vw,54px) !important; }
-
-  [data-r="feat"] { grid-template-columns:1fr !important; grid-template-rows:auto auto !important; gap:18px !important; padding:28px 20px !important; position:sticky !important; top:0 !important; height:100svh !important; min-height:0 !important; overflow:hidden !important; align-content:center !important; }
-  [data-r="feat"] p { font-size:15px !important; line-height:1.55 !important; }
-  [data-r="feat"] > div:last-child { gap:14px !important; }
-  [data-r="feat-h2"] { font-size:min(6.6vw,40px) !important; }
-  [data-r="feat-card"] { aspect-ratio:0.759 / 1 !important; height:auto !important; }
-  [data-r="feat-card"][data-r-keep-aspect] { aspect-ratio:0.759 / 1 !important; height:auto !important; min-height:0 !important; max-height:none !important; width:100% !important; max-width:100% !important; margin:0 !important; }
-  [data-r="feat-card"] > img { object-fit:contain !important; object-position:center bottom !important; }
-  [data-r="feat-card"] > img[data-r="feat-img-m"] ~ img, [data-r="feat-card"] > img:not([data-r="feat-img-m"]) { display:none !important; }
-  [data-r="feat-card"] > img[data-r="feat-img-m"] { display:block !important; position:absolute !important; inset:auto !important; top:-4.90% !important; left:-9.10% !important; width:118.20% !important; height:113.47% !important; object-fit:fill !important; }
 
   [data-r="footer"] { display:flex !important; flex-direction:column !important; padding-bottom:0 !important; }
   [data-r="footer-top"] { order:1 !important; grid-template-columns:1fr !important; gap:26px !important; }
