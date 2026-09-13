@@ -108,9 +108,8 @@ html { scroll-behavior:smooth; }
   [data-r="feat-h2"] { font-size:min(6.6vw,40px) !important; }
   [data-r="feat-card"] { aspect-ratio:0.759 / 1 !important; height:auto !important; }
   [data-r="feat-card"][data-r-keep-aspect] { aspect-ratio:0.759 / 1 !important; height:auto !important; min-height:0 !important; max-height:none !important; width:100% !important; max-width:100% !important; margin:0 !important; }
-  [data-r="feat-card"] > img { object-fit:contain !important; object-position:center bottom !important; }
-  [data-r="feat-card"] > img[data-r="feat-img-m"] ~ img, [data-r="feat-card"] > img:not([data-r="feat-img-m"]) { display:none !important; }
-  [data-r="feat-card"] > img[data-r="feat-img-m"] { display:block !important; position:absolute !important; inset:0 !important; top:0 !important; left:0 !important; width:100% !important; height:100% !important; object-fit:cover !important; }
+  [data-r="feat-card"] > img[data-r="feat-img-m"] { display:none !important; }
+  [data-r="feat-card"] > img:not([data-r="feat-img-m"]) { display:block !important; position:absolute !important; inset:0 !important; width:100% !important; height:100% !important; object-fit:cover !important; }
 
   [data-r="footer"] { display:flex !important; flex-direction:column !important; padding-bottom:0 !important; }
   [data-r="footer-top"] { order:1 !important; grid-template-columns:1fr !important; gap:26px !important; }
