@@ -131,10 +131,10 @@ html { scroll-behavior:smooth; }
 
   [data-r="train"] { grid-template-columns:1fr !important; }
   [data-r="train-card"] { border-top:2px solid #fff !important; min-height:118vw !important; }
-  [data-r="train-divider"] { left:8% !important; }
+  [data-r="train-divider"] { left:8% !important; z-index:1 !important; }
   [data-r="train-courtline"] { right:8% !important; }
-  [data-r="train-phone"][data-pos="a"] { left:6% !important; top:9% !important; width:50% !important; }
-  [data-r="train-phone"][data-pos="b"] { right:4% !important; top:24% !important; width:50% !important; }
+  [data-r="train-phone"][data-pos="a"] { left:5% !important; right:auto !important; top:9% !important; width:52% !important; }
+  [data-r="train-phone"][data-pos="b"] { right:5% !important; left:auto !important; top:24% !important; width:52% !important; }
   [data-r="train-h2"] { font-size:min(7.4vw,54px) !important; }
   [data-r="train-cta"] a { flex:1 1 auto !important; justify-content:center !important; }
 
