@@ -37,6 +37,7 @@
 
 <div data-r="fabmenu" data-open="false" style="position:fixed;inset:0;z-index:69;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:clamp(18px,3vh,34px);background:rgba(0,82,201,0.86);-webkit-backdrop-filter:blur(22px) saturate(150%);backdrop-filter:blur(22px) saturate(150%);font-family:'Obviously','Archivo',sans-serif;font-style:italic;font-weight:700;text-transform:uppercase;opacity:0;visibility:hidden;pointer-events:none;transition:opacity 320ms ease, visibility 0s linear 320ms">
   <a href="#features" data-fab-close style="font-size:clamp(30px,6vw,64px);color:#fff;line-height:1">Features</a>
+  <a href="#training" data-fab-close style="font-size:clamp(30px,6vw,64px);color:#fff;line-height:1">Training</a>
   <a href="#how" data-fab-close style="font-size:clamp(30px,6vw,64px);color:#fff;line-height:1">How it works</a>
   <a href="#faqs" data-fab-close style="font-size:clamp(30px,6vw,64px);color:#fff;line-height:1">FAQs</a>
   <a href="#clubs" data-fab-close style="font-size:clamp(30px,6vw,64px);color:#fff;line-height:1">For clubs</a>
@@ -53,6 +54,7 @@
       </div>
       <nav data-r="nav" data-open="false" style="display:flex;align-items:center;gap:clamp(22px,3.2vw,56px);font-size:15px;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;color:#fff;white-space:nowrap">
         <a href="#features" data-nav-close>Features</a>
+        <a href="#training" data-nav-close>Training</a>
         <a href="#how" data-nav-close>How it works</a>
         <a href="#faqs" data-nav-close>FAQs</a>
         <a href="#clubs" data-nav-close>For clubs</a>
@@ -215,6 +217,78 @@
   </section>
 </div>
 
+<!-- ===================== TRAINING SESSIONS ===================== -->
+<section id="training" style="position:relative;z-index:1;background:#F4F4F5;padding:96px clamp(20px,4vw,72px);font-family:'Inter',system-ui,sans-serif">
+
+  <div data-r="train" style="position:relative;width:100%;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;align-items:stretch;border-radius:26px;overflow:hidden;background-color:#0052C9;background-image:url('./assets/bg-noise.webp');background-size:1150px auto;background-repeat:repeat;background-position:top center">
+
+    <div style="display:flex;flex-direction:column;gap:24px;padding:clamp(40px,4.6vw,86px) clamp(28px,3.6vw,72px)">
+      <div style="display:flex;align-items:center;gap:10px;color:#F5821F;font-size:14px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase">
+        <span style="width:9px;height:9px;border-radius:50%;background:#F5821F"></span>Training Sessions
+      </div>
+      <h2 data-r="train-h2" style="margin:0;font-family:'Obviously','Archivo',sans-serif;font-style:italic;font-weight:700;font-size:clamp(40px,4.4vw,66px);line-height:0.96;letter-spacing:-0.02em;text-transform:uppercase;color:#fff">Train with<br>a <span style="color:#F5821F">target.</span></h2>
+      <p style="margin:14px 0 0;font-size:19px;font-weight:700;color:#fff">Practice where every ball counts.</p>
+      <p style="margin:0;max-width:520px;font-size:17px;line-height:1.65;color:rgba(255,255,255,0.86);text-wrap:pretty">Build a list of drills, drop your cones where you aim, and SEE scores every shot as a hit or a miss. Free or Targeted &mdash; the courts, the cones and the camera do the rest.</p>
+      <div data-r="train-cta" style="display:flex;flex-wrap:wrap;gap:18px;margin-top:8px">
+        <a href="https://tally.so/r/2Ek5Xe" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:14px;background:#F5821F;color:#fff;padding:17px 26px;font-size:18px;font-weight:500;line-height:1">Get Early Access <span>&rarr;</span></a>
+      </div>
+    </div>
+
+    <div data-r="train-card" style="position:relative;min-height:clamp(420px,44vw,700px);overflow:hidden">
+      <div data-r="train-divider" style="position:absolute;top:0;bottom:0;left:0;width:2px;background:#fff;z-index:3"></div>
+      <div data-r="train-courtline" style="position:absolute;top:0;bottom:0;right:6%;width:2px;background:#fff;z-index:1"></div>
+      <img data-r="train-phone" data-pos="a" src="./assets/training-target.webp" loading="lazy" decoding="async" alt="SEE training screen: cones placed on the court join into a target zone" style="position:absolute;z-index:2;left:6%;top:9%;width:42%;height:auto;filter:drop-shadow(0 30px 40px rgba(0,20,60,0.45))">
+      <img data-r="train-phone" data-pos="b" src="./assets/training-results.webp" loading="lazy" decoding="async" alt="SEE training results: hits and misses ring plus a full-court shot map" style="position:absolute;z-index:3;right:5%;top:24%;width:42%;height:auto;filter:drop-shadow(0 30px 40px rgba(0,20,60,0.45))">
+    </div>
+  </div>
+
+  <div data-r="train-steps" style="display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(24px,3.4vw,64px);margin-top:clamp(56px,7vw,110px)">
+
+    <article style="display:flex;flex-direction:column;gap:26px">
+      <div data-r="train-media" style="position:relative;display:flex;justify-content:center;align-items:flex-start;height:clamp(360px,34vw,520px);overflow:hidden;background:#fff;border-radius:26px">
+        <img src="./assets/training-list.webp" loading="lazy" decoding="async" alt="Shot list with a Targeted serve drill and a Free lob drill" style="display:block;width:60%;height:auto;margin-top:28px;filter:drop-shadow(0 18px 24px rgba(0,20,60,0.22))">
+      </div>
+      <div style="display:flex;gap:18px;align-items:flex-start">
+        <div style="flex:0 0 auto;width:46px;height:46px;display:grid;place-items:center;font-family:'Obviously','Archivo',sans-serif;font-style:italic;font-weight:700;font-size:19px;color:#fff;background:#0052C9">01</div>
+        <div style="display:flex;flex-direction:column;gap:8px">
+          <h3 style="margin:0;font-size:21px;font-weight:700;letter-spacing:-0.01em;color:#0B2A5B">Build your list</h3>
+          <p style="margin:0;font-size:16px;line-height:1.6;color:#6B7076;text-wrap:pretty">Pick serves, volleys, lobs, overheads or groundstrokes and set how many of each. Free tracks wherever you hit; Targeted scores every shot against your zone.</p>
+        </div>
+      </div>
+    </article>
+
+    <article style="display:flex;flex-direction:column;gap:26px">
+      <div data-r="train-media" style="position:relative;display:flex;justify-content:center;align-items:flex-start;height:clamp(360px,34vw,520px);overflow:hidden;background:#fff;border-radius:26px">
+        <img src="./assets/training-target.webp" loading="lazy" decoding="async" alt="Cones on a padel court joined into two target zones" style="display:block;width:60%;height:auto;margin-top:28px;filter:drop-shadow(0 18px 24px rgba(0,20,60,0.22))">
+      </div>
+      <div style="display:flex;gap:18px;align-items:flex-start">
+        <div style="flex:0 0 auto;width:46px;height:46px;display:grid;place-items:center;font-family:'Obviously','Archivo',sans-serif;font-style:italic;font-weight:700;font-size:19px;color:#fff;background:#0052C9">02</div>
+        <div style="display:flex;flex-direction:column;gap:8px">
+          <h3 style="margin:0;font-size:21px;font-weight:700;letter-spacing:-0.01em;color:#0B2A5B">Place your cones</h3>
+          <p style="margin:0;font-size:16px;line-height:1.6;color:#6B7076;text-wrap:pretty">Tap the court where your cones sit. From three cones SEE joins them into a target shape &mdash; add up to four zones, like a corner and the middle.</p>
+        </div>
+      </div>
+    </article>
+
+    <article style="display:flex;flex-direction:column;gap:26px">
+      <div data-r="train-media" style="position:relative;display:flex;justify-content:center;align-items:flex-start;height:clamp(360px,34vw,520px);overflow:hidden;background:#fff;border-radius:26px">
+        <img src="./assets/training-results.webp" loading="lazy" decoding="async" alt="Results with hits, misses and a shot placement map" style="display:block;width:60%;height:auto;margin-top:28px;filter:drop-shadow(0 18px 24px rgba(0,20,60,0.22))">
+      </div>
+      <div style="display:flex;gap:18px;align-items:flex-start">
+        <div style="flex:0 0 auto;width:46px;height:46px;display:grid;place-items:center;font-family:'Obviously','Archivo',sans-serif;font-style:italic;font-weight:700;font-size:19px;color:#fff;background:#0052C9">03</div>
+        <div style="display:flex;flex-direction:column;gap:8px">
+          <h3 style="margin:0;font-size:21px;font-weight:700;letter-spacing:-0.01em;color:#0B2A5B">See where it landed</h3>
+          <p style="margin:0;font-size:16px;line-height:1.6;color:#6B7076;text-wrap:pretty">Hits, misses and a full-court shot map the moment your list ends. Free sessions add duration, distance covered and calories.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+
+  <div data-r="train-tags" style="display:flex;flex-wrap:wrap;gap:12px;margin-top:clamp(36px,4vw,56px)">
+    <span>Free &amp; Targeted modes</span><span>Cones to zones</span><span>Hits &amp; misses</span><span>Shot placement map</span><span>No wearables</span>
+  </div>
+</section>
+
 <!-- ======================= HOW IT WORKS ======================= -->
 <section id="how" data-r="steps-wrap" style="position:relative;height:300vh;background:#F4F4F5;font-family:'Inter',system-ui,sans-serif">
   <div data-r="steps" style="position:sticky;top:0;height:100svh;display:flex;flex-direction:column;justify-content:center;gap:clamp(20px,3vh,40px);padding:clamp(28px,4.5vh,64px) clamp(20px,4vw,72px);overflow:hidden">
@@ -329,6 +403,16 @@
         </div>
       </div>
 
+      <div data-r="faq-item" style="border-top:2px solid rgba(11,42,91,0.14)">
+        <button type="button" style="display:flex;align-items:center;justify-content:space-between;gap:24px;width:100%;padding:26px 4px;background:none;border:0;cursor:pointer;text-align:left;font-family:'Inter',system-ui,sans-serif">
+          <span style="font-size:clamp(18px,1.5vw,22px);font-weight:700;letter-spacing:-0.01em;color:#0B2A5B">What are Training Sessions?</span>
+          <span data-r="faq-icon" style="flex:0 0 auto;width:42px;height:42px;display:grid;place-items:center;font-size:24px;line-height:1;transition:background 280ms ease,color 280ms ease"><span data-r="faq-glyph" style="display:block;line-height:1;transition:transform 280ms ease">+</span></span>
+        </button>
+        <div data-r="faq-panel" style="overflow:hidden;transition:max-height 380ms ease,opacity 300ms ease">
+          <p style="margin:0;max-width:640px;padding:0 4px 26px;font-size:16px;line-height:1.65;color:#6B7076;text-wrap:pretty">Build a list of drills, place cones where you want to aim, and SEE scores every shot as a hit or a miss. Free mode tracks wherever you hit.</p>
+        </div>
+      </div>
+
       <div data-r="faq-item" style="border-top:2px solid rgba(11,42,91,0.14);border-bottom:2px solid rgba(11,42,91,0.14)">
         <button type="button" style="display:flex;align-items:center;justify-content:space-between;gap:24px;width:100%;padding:26px 4px;background:none;border:0;cursor:pointer;text-align:left;font-family:'Inter',system-ui,sans-serif">
           <span style="font-size:clamp(18px,1.5vw,22px);font-weight:700;letter-spacing:-0.01em;color:#0B2A5B">Is this only for advanced players?</span>
@@ -352,6 +436,7 @@
       <div style="display:flex;flex-direction:column;gap:10px">
         <div style="font-size:13px;font-weight:700;letter-spacing:0.12em;color:rgba(255,255,255,0.5)">The Platform</div>
         <a href="#features">Features</a>
+        <a href="#training">Training</a>
         <a href="#how">How it works</a>
         <a href="#faqs">FAQs</a>
       </div>
@@ -377,6 +462,7 @@
       <div style="display:flex;flex-direction:column;gap:10px">
         <div style="font-size:13px;font-weight:700;letter-spacing:0.12em;color:rgba(255,255,255,0.5)">The Platform</div>
         <a href="#features">Features</a>
+        <a href="#training">Training</a>
         <a href="#how">How it works</a>
         <a href="#faqs">FAQs</a>
       </div>

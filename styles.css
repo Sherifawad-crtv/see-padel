@@ -44,28 +44,36 @@ html { scroll-behavior:smooth; }
 }
 
 /* ---- Anchored scroll targets ---- */
-#features, #how, #faqs, #clubs { scroll-margin-top:0; }
-[data-r="steps-wrap"], [data-r="faq-wrap"], [data-r="footer"], #clubs { position:relative; z-index:1; }
+#features, #training, #how, #faqs, #clubs { scroll-margin-top:0; }
+[data-r="steps-wrap"], [data-r="faq-wrap"], [data-r="footer"], #clubs, #training { position:relative; z-index:1; }
 
 /* ---- Hover / focus affordances (were style-hover in the prototype) ---- */
 @media (min-width:768px) {
-  [data-r="cta"] > a, [data-r="cta2-buttons"] > a, [data-r="signin"] {
+  [data-r="cta"] > a, [data-r="cta2-buttons"] > a, [data-r="train-cta"] > a, [data-r="signin"] {
     border-radius:0;
     transition:border-radius 380ms cubic-bezier(0.22,1,0.36,1), background 260ms ease, border-color 260ms ease, color 260ms ease;
   }
-  [data-r="cta"] > a > span, [data-r="cta2-buttons"] > a > span, [data-r="signin"] > span {
+  [data-r="cta"] > a > span, [data-r="cta2-buttons"] > a > span, [data-r="train-cta"] > a > span, [data-r="signin"] > span {
     display:inline-block;
     transition:transform 320ms cubic-bezier(0.22,1,0.36,1);
   }
-  [data-r="cta"] > a:hover, [data-r="cta2-buttons"] > a:hover { border-radius:24px; }
+  [data-r="cta"] > a:hover, [data-r="cta2-buttons"] > a:hover, [data-r="train-cta"] > a:hover { border-radius:24px; }
   [data-r="signin"]:hover { border-radius:16px; }
-  [data-r="cta"] > a:hover > span, [data-r="cta2-buttons"] > a:hover > span, [data-r="signin"]:hover > span { transform:translateX(6px); }
+  [data-r="cta"] > a:hover > span, [data-r="cta2-buttons"] > a:hover > span, [data-r="train-cta"] > a:hover > span, [data-r="signin"]:hover > span { transform:translateX(6px); }
 }
 [data-r="signin"]:hover { background:#ff9436; color:#fff; }
 [data-r="cta"] a.is-primary:hover { background:#ff9436; color:#fff; }
 [data-r="cta"] a.is-ghost:hover { background:rgba(255,255,255,0.18); color:#fff; border-color:#fff; }
 [data-r="cta2-buttons"] a:hover { background:#0a63e0; color:#fff; }
+[data-r="train-cta"] a:hover { background:#ff9436; color:#fff; }
 [data-r="faq-item"] button:hover span:first-child { color:#0052C9; }
+
+/* ---- Training Sessions section ---- */
+[data-r="train-tags"] span { display:inline-block; padding:13px 18px; border:2px solid rgba(11,42,91,0.14); color:#0B2A5B; font-size:14px; font-weight:600; letter-spacing:0.08em; text-transform:uppercase; line-height:1; transition:background 260ms ease, color 260ms ease, border-color 260ms ease; }
+@media (hover:hover) and (pointer:fine) { [data-r="train-tags"] span:hover { background:#0052C9; border-color:#0052C9; color:#fff; } }
+[data-r="train-media"] img { transition:transform 520ms cubic-bezier(0.22,1,0.36,1); }
+@media (hover:hover) and (pointer:fine) { [data-r="train-steps"] article:hover [data-r="train-media"] img { transform:translateY(-14px); } }
+@media (max-width:1023px) { [data-r="train-steps"] { grid-template-columns:1fr !important; max-width:560px; margin-left:auto; margin-right:auto; } [data-r="train-media"] { height:min(110vw,520px) !important; } }
 
 /* ---- FAB / burger / mobile menu ---- */
 [data-r="fab"][data-on="true"] { transform:translateY(0) !important; pointer-events:auto !important; }
@@ -120,6 +128,15 @@ html { scroll-behavior:smooth; }
   [data-r="hl-courtline"] { z-index:1 !important; right:8% !important; }
   [data-r="hl-divider"] { left:8% !important; z-index:1 !important; }
   [data-r="hl-h2"] { font-size:min(7.4vw,54px) !important; }
+
+  [data-r="train"] { grid-template-columns:1fr !important; }
+  [data-r="train-card"] { border-top:2px solid #fff !important; min-height:118vw !important; }
+  [data-r="train-divider"] { left:8% !important; }
+  [data-r="train-courtline"] { right:8% !important; }
+  [data-r="train-phone"][data-pos="a"] { left:6% !important; top:9% !important; width:50% !important; }
+  [data-r="train-phone"][data-pos="b"] { right:4% !important; top:24% !important; width:50% !important; }
+  [data-r="train-h2"] { font-size:min(7.4vw,54px) !important; }
+  [data-r="train-cta"] a { flex:1 1 auto !important; justify-content:center !important; }
 
   [data-r="footer"] { display:flex !important; flex-direction:column !important; padding-bottom:0 !important; }
   [data-r="footer-top"] { order:1 !important; grid-template-columns:1fr !important; gap:26px !important; }

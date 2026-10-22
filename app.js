@@ -55,7 +55,7 @@
     const cx = r.left + r.width / 2;
     const cy = r.top + r.height / 2;
     let onBlue = false;
-    $$('[data-r="hl"], [data-r="inside"], [data-r="cta-panel"], [data-r="footer"]').forEach((b) => {
+    $$('[data-r="hl"], [data-r="train"], [data-r="inside"], [data-r="cta-panel"], [data-r="footer"]').forEach((b) => {
       const br = b.getBoundingClientRect();
       if (cx >= br.left && cx <= br.right && cy >= br.top && cy <= br.bottom) onBlue = true;
     });
